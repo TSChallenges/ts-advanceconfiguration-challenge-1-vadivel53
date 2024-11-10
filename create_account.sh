@@ -5,7 +5,7 @@ username=$1
 account_number=$2
 
 # Default balance for new accounts
-default_balance= 1000
+default_balance=1000
 
 # Check if account already exists in accounts.txt
 if grep -q "Account: $2" accounts.txt; then

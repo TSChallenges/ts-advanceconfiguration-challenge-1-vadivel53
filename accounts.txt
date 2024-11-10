@@ -1,0 +1,1 @@
+Username:john_doe | Account: 12346 | Balance: 1000
