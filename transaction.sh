@@ -11,9 +11,10 @@ timestamp=$(date +'%Y-%m-%d %H:%M:%S')
 # Log the transaction in transaction_log.txt
 
 if (("$2"=="withdraw" && $3>=50000)); then
-    echo "ALERT: High-value transaction detected! Withdrawal: ₹50000 or above."
+    echo "ALERT: High-value transaction detected!"
+    echo $timestamp "|" "Account: "$1 "|" $2":" $3>>transaction_log.txt
     else
-        echo $timestamp "|" "Account: "$1 "|" $2":" $3>>tansaction_log.txt
+        echo $timestamp "|" "Account: "$1 "|" $2":" $3>>transaction_log.txt
 fi
 
 # Check if the transaction is a high-value withdrawal

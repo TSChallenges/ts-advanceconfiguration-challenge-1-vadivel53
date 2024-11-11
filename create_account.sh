@@ -12,7 +12,7 @@ if grep -q "Account: $2" accounts.txt; then
   echo "Account already Exists"
 else
 # Add the new account to accounts.txt
-echo "Username:"$1 "|" "Account:" $2 "|" "Balance:" $default_balance >>accounts.txt
+echo "Username: "$1 "|" "Account:" $2 "|" "Balance:" $default_balance >>accounts.txt
 fi
 # Create the user in the system (if running in a real Linux environment)
 #todo
